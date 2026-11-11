@@ -29,6 +29,8 @@ afternoon, start at page 1.
 
 ## The whole system on one page
 
+![Janus Architecture](images/architecture.svg)
+
 ```
  client ──▶ Janus proxy (Go) ──▶ one of your backend pods
                 │      ▲

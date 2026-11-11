@@ -86,6 +86,8 @@ Janus, leave the baselines alone, test on a friendly workload. So the benchmark 
 
 ### The testbed
 
+![Benchmark Testbed Architecture](images/benchmark-testbed.svg)
+
 | Item | Value |
 | --- | --- |
 | Machine | Dedicated Multipass VM `janus-bench`, Ubuntu 24.04, 4 vCPUs, 2 GiB, cgroup v2 |

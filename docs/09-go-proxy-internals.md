@@ -8,6 +8,8 @@ store keeps slow lookups off the hot path.
 
 ## The reverse proxy
 
+![Go Reverse Proxy and Telemetry Pipeline](images/proxy-pipeline.svg)
+
 Janus is built on Go's `net/http/httputil.ReverseProxy`, which already handles
 receiving the request, rewriting it for the upstream, forwarding it, copying the
 response back and handling upstream errors. Janus plugs into four hooks:

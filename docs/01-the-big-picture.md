@@ -34,6 +34,8 @@ All of these are close to **memoryless**: they can't tell a pod that is
 consistently 5 ms from one that is *occasionally* 500 ms, and they react late to
 gradual degradation.
 
+![The Cashier Problem: Classic Policies vs Janus](images/cashier-problem.svg)
+
 ## What Janus does differently
 
 Janus keeps a small statistical model for every backend. After each response it

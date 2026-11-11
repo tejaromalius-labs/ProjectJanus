@@ -7,6 +7,8 @@
 
 ## Part A: the context (12 features)
 
+![12-Feature Context and Reward Pipeline](images/features-and-reward.svg)
+
 When Janus scores a pod it builds a vector of 12 numbers describing the situation:
 some about the pod, some about the request, some about the clock.
 

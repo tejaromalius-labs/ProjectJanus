@@ -21,6 +21,8 @@ stall everything.
 
 ### The pattern: Read-Copy-Update (RCU)
 
+![Lock-Free RCU with Crossbeam Epoch](images/rcu-epoch.svg)
+
 RCU suits workloads with many readers and one writer. It has three steps:
 
 1. **Read.** A reader takes a reference to the current data. No lock.

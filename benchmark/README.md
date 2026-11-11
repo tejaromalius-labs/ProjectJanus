@@ -22,6 +22,8 @@ recovery study that `run.sh` now runs.
 
 ## Run
 
+![Benchmark Testbed Architecture](../docs/images/benchmark-testbed.svg)
+
 Requires a dedicated Multipass VM with cgroup v2, systemd and curl, and the
 build prerequisites in the root README. The frozen protocol uses:
 

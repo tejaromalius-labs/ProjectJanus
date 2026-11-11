@@ -62,6 +62,8 @@ Both satisfy a one-method interface (`Run(ctx)`), so tests and local runs never 
 
 Every pod moves through states. Think of it as a trial period.
 
+![Pod Lifecycle State Machine](images/pod-lifecycle.svg)
+
 ```
 WARMING ── 200 observations ──▶ SHADOW ── 1,000 observations AND latency OK ──▶ ACTIVE
 

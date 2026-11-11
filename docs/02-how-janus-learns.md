@@ -24,6 +24,8 @@ That's the whole exploration-versus-exploitation balance, in one number.
 
 ## The score formula
 
+![LinUCB Score and Sherman-Morrison Update](images/linucb-learn.svg)
+
 ```
 score = xᵀθ  +  α · √(xᵀ A⁻¹ x)
         ────     ──────────────

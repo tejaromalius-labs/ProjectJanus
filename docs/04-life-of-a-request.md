@@ -8,6 +8,8 @@ understanding the code.
 
 ## The picture first
 
+![The Life of a Request](images/request-lifecycle.svg)
+
 ```
  request arrives
       │

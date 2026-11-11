@@ -78,6 +78,8 @@ The full account, failures included, is in [`docs/history.md`](docs/history.md).
 
 ## Architecture at a glance
 
+![Janus Architecture](docs/images/architecture.svg)
+
 ```
  clients ──▶ Go proxy :8080
                 │

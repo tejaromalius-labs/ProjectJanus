@@ -28,6 +28,8 @@ right. Several simple, boring mechanisms sit around it.
 
 Code: `linucb-proxy/internal/circuitbreaker/cb.go`.
 
+![Circuit Breaker State Machine](images/circuit-breaker.svg)
+
 Every backend has a circuit breaker, wired into every routing path. HTTP 5xx
 responses and connection failures count against it. It has three states, like a
 household fuse:
