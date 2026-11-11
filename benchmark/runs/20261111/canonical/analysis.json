@@ -1,0 +1,286 @@
+{
+  "verdict": "Frozen gates re-checked in an exploratory run (not confirmatory): Janus beat all four baselines in this profile",
+  "study": "exploratory recovery",
+  "recovery_seconds": 30.0,
+  "trials": 120,
+  "expected_trials": 120,
+  "seeds": 6,
+  "validity_findings": [],
+  "contrasts": {
+    "rr": {
+      "per_seed_primary_p99_ratios": [
+        0.009279411116393542,
+        0.011079324932831473,
+        0.008940134105948879,
+        0.014126964765054123,
+        0.011545091495414397,
+        0.012969528489365313
+      ],
+      "primary_p99_ratio": 0.011171839718225971,
+      "simultaneous_ratio_interval": [
+        0.009445937157950073,
+        0.013185138923939748
+      ],
+      "failure_rate_difference": -0.04933333333333333,
+      "healthy_achieved_rate_ratio": 1.000019100356158,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    },
+    "lc": {
+      "per_seed_primary_p99_ratios": [
+        0.18823148978821494,
+        0.21169209265799668,
+        0.16716566364463187,
+        0.24249646300404104,
+        0.2108229173428195,
+        0.26328488063972194
+      ],
+      "primary_p99_ratio": 0.21155933341243563,
+      "simultaneous_ratio_interval": [
+        0.18141129876010859,
+        0.24482296808896156
+      ],
+      "failure_rate_difference": -0.049833333333333334,
+      "healthy_achieved_rate_ratio": 0.9999976831334387,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    },
+    "p2c": {
+      "per_seed_primary_p99_ratios": [
+        0.04717922100305585,
+        0.0539500036933121,
+        0.0444434660373059,
+        0.0685453698274931,
+        0.05776899169789707,
+        0.06543724004547932
+      ],
+      "primary_p99_ratio": 0.055527485639316754,
+      "simultaneous_ratio_interval": [
+        0.04736272488791238,
+        0.06485288486799967
+      ],
+      "failure_rate_difference": -0.049666666666666665,
+      "healthy_achieved_rate_ratio": 1.0000063695127372,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    },
+    "pewma": {
+      "per_seed_primary_p99_ratios": [
+        0.21076979796416606,
+        0.242868494887187,
+        0.20948649983092338,
+        0.3362759871216574,
+        0.28439782732251057,
+        0.25917317233958914
+      ],
+      "primary_p99_ratio": 0.2535661613361285,
+      "simultaneous_ratio_interval": [
+        0.21749326892004203,
+        0.30170855946650904
+      ],
+      "failure_rate_difference": -0.04811111111111111,
+      "healthy_achieved_rate_ratio": 1.0000231447039518,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    }
+  },
+  "recovery_contrasts": {
+    "rr": {
+      "per_seed_recovery_p99_ratios": [
+        1.0050499835596212,
+        0.9888073538079404,
+        1.0158031863624641,
+        1.0333426030139266,
+        0.993303309086451,
+        1.0030109095751982
+      ],
+      "recovery_p99_ratio": 1.0064451983215712,
+      "simultaneous_ratio_interval": [
+        0.9934113397644814,
+        1.0227197306073865
+      ],
+      "per_scenario_ratio": {
+        "latency": 1.0046113073796419,
+        "errors": 1.0203998818726372,
+        "cpu": 0.9944934679826788
+      }
+    },
+    "lc": {
+      "per_seed_recovery_p99_ratios": [
+        1.015549401408968,
+        0.9899322177064905,
+        1.0220517538997245,
+        1.0345126788144663,
+        1.0067858764892585,
+        1.020657810930222
+      ],
+      "recovery_p99_ratio": 1.0148193732602961,
+      "simultaneous_ratio_interval": [
+        1.0000363689163432,
+        1.0277956564258837
+      ],
+      "per_scenario_ratio": {
+        "latency": 1.0125173610598952,
+        "errors": 1.0262253921500555,
+        "cpu": 1.0058217289562648
+      }
+    },
+    "p2c": {
+      "per_seed_recovery_p99_ratios": [
+        1.0182487242416676,
+        0.997342197704602,
+        1.0219314288551617,
+        1.0217762047005323,
+        1.0255764989695833,
+        1.0025919566639447
+      ],
+      "recovery_p99_ratio": 1.014521638291035,
+      "simultaneous_ratio_interval": [
+        1.0031274929532954,
+        1.023136538570103
+      ],
+      "per_scenario_ratio": {
+        "latency": 0.9984531787059162,
+        "errors": 1.0239674861610544,
+        "cpu": 1.0213393679596023
+      }
+    },
+    "pewma": {
+      "per_seed_recovery_p99_ratios": [
+        0.3067236112406244,
+        0.35550681152409014,
+        0.3277701874303948,
+        0.3460222786938712,
+        0.3178601521844847,
+        0.27354472744398356
+      ],
+      "recovery_p99_ratio": 0.32007777070165466,
+      "simultaneous_ratio_interval": [
+        0.2913863867754149,
+        0.34580505024380737
+      ],
+      "per_scenario_ratio": {
+        "latency": 0.20160422535410796,
+        "errors": 0.6447467468697516,
+        "cpu": 0.2522770541624913
+      }
+    }
+  },
+  "recovery": {
+    "latency/janus": {
+      "median_readmission_s": 2.25,
+      "never_readmitted": 0,
+      "median_settled_share": 0.2503333333333333,
+      "median_p99_ms": 4.0166275,
+      "median_first_3s_p99_ms": 4.5068865
+    },
+    "latency/rr": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.25,
+      "median_p99_ms": 4.016188,
+      "median_first_3s_p99_ms": 3.9966705
+    },
+    "latency/lc": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.24972222222222223,
+      "median_p99_ms": 3.985698,
+      "median_first_3s_p99_ms": 3.9721285
+    },
+    "latency/p2c": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.24861111111111112,
+      "median_p99_ms": 4.043748,
+      "median_first_3s_p99_ms": 4.1581589999999995
+    },
+    "latency/pewma": {
+      "median_readmission_s": 24.4,
+      "never_readmitted": 0,
+      "median_settled_share": 0.17616666666666667,
+      "median_p99_ms": 19.6201005,
+      "median_first_3s_p99_ms": 31.354306
+    },
+    "errors/janus": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.2501111111111111,
+      "median_p99_ms": 4.084608,
+      "median_first_3s_p99_ms": 4.1018295
+    },
+    "errors/rr": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.25,
+      "median_p99_ms": 3.9700735,
+      "median_first_3s_p99_ms": 3.901904
+    },
+    "errors/lc": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.24788888888888888,
+      "median_p99_ms": 3.937697,
+      "median_first_3s_p99_ms": 3.922793
+    },
+    "errors/p2c": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.24983333333333335,
+      "median_p99_ms": 3.9464224999999997,
+      "median_first_3s_p99_ms": 3.917059
+    },
+    "errors/pewma": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.25033333333333335,
+      "median_p99_ms": 6.1115835,
+      "median_first_3s_p99_ms": 4.37828
+    },
+    "cpu/janus": {
+      "median_readmission_s": 1.55,
+      "never_readmitted": 0,
+      "median_settled_share": 0.249,
+      "median_p99_ms": 3.9751885,
+      "median_first_3s_p99_ms": 4.0903165
+    },
+    "cpu/rr": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.25,
+      "median_p99_ms": 4.050916,
+      "median_first_3s_p99_ms": 55.7134405
+    },
+    "cpu/lc": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.2520555555555556,
+      "median_p99_ms": 4.004791,
+      "median_first_3s_p99_ms": 4.014461
+    },
+    "cpu/p2c": {
+      "median_readmission_s": 1.0,
+      "never_readmitted": 0,
+      "median_settled_share": 0.25016666666666665,
+      "median_p99_ms": 3.9264875,
+      "median_first_3s_p99_ms": 4.0207415
+    },
+    "cpu/pewma": {
+      "median_readmission_s": 21.799999999999997,
+      "never_readmitted": 0,
+      "median_settled_share": 0.21016666666666667,
+      "median_p99_ms": 16.3581835,
+      "median_first_3s_p99_ms": 25.842813
+    }
+  },
+  "measured_requests": 2502000,
+  "requests_including_warmup": 4662000
+}

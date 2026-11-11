@@ -1,0 +1,15 @@
+# directories
+/helm-chart
+/.claude
+/.vscode
+/.git
+/linucb-core/target
+/linucb-proxy/bin
+/linucb-proxy/.testcache
+
+# files
+/.gitignore
+/README.md
+*.md
+.DS_Store
+.env

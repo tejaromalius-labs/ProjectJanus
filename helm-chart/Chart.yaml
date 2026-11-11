@@ -1,0 +1,14 @@
+apiVersion: v2
+name: project-janus
+description: LinUCB intelligent load balancer for Kubernetes (Project Janus, spec §4.2)
+type: application
+version: 0.1.0
+appVersion: "2.0"
+keywords:
+  - load-balancing
+  - contextual-bandit
+  - linucb
+  - reinforcement-learning
+home: https://github.com/giltas/projectjanus
+maintainers:
+  - name: Giltas Platform

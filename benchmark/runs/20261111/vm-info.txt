@@ -1,0 +1,12 @@
+Name:           janus-bench
+State:          Running
+Zone:           zone1
+Snapshots:      0
+IPv4:           10.81.127.219
+Release:        Ubuntu 24.04.5 LTS
+Image hash:     04e8f2461a16 (Ubuntu 24.04 LTS)
+CPU(s):         4
+Load:           0.00 0.00 0.00
+Disk usage:     2.0GiB out of 7.7GiB
+Memory usage:   341.7MiB out of 1.9GiB
+Mounts:         --

@@ -1,0 +1,29 @@
+# directory
+**/.vscode/
+**/.idea/
+**/target/
+/.claude/
+
+# build output
+**/__pycache__/
+*.pyc
+/linucb-proxy/proxy
+/linucb-proxy/bin/
+*.test
+*.out
+*.a
+*.so
+*.o
+
+# go
+/linucb-proxy/.testcache
+coverage.*
+
+# local and editor files
+.env
+.env.*
+.DS_Store
+*.swp
+*.orig
+*.rej
+*.bundle

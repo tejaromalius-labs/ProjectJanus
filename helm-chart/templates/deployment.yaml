@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: janus
+  labels:
+    app: janus
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: janus
+  template:
+    metadata:
+      labels:
+        app: janus
+    spec:
+      serviceAccountName: janus
+      containers:
+        - name: proxy
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args:
+            - "-listen={{ .Values.proxy.listen }}"
+            - "-alpha={{ .Values.proxy.alpha }}"
+            - "-gamma={{ .Values.proxy.gamma }}"
+            - "-feature-interval={{ .Values.proxy.featureInterval }}"
+            {{- if .Values.proxy.prometheusURL }}
+            - "-prometheus-url={{ .Values.proxy.prometheusURL }}"
+            {{- end }}
+            {{- if .Values.proxy.service }}
+            - "-service={{ .Values.proxy.service }}"
+            {{- end }}
+          env:
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+          ports:
+            - name: http
+              containerPort: {{ .Values.proxy.port }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 20

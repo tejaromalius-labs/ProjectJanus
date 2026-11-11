@@ -1,0 +1,95 @@
+{
+  "verdict": "Janus beat all four baselines in this profile",
+  "trials": 120,
+  "expected_trials": 120,
+  "seeds": 6,
+  "validity_findings": [],
+  "contrasts": {
+    "rr": {
+      "per_seed_primary_p99_ratios": [
+        0.021037644720634383,
+        0.00971516069523775,
+        0.009576838533543072,
+        0.019112729429229078,
+        0.017808387948331183,
+        0.009095142880716653
+      ],
+      "primary_p99_ratio": 0.013502194280559425,
+      "simultaneous_ratio_interval": [
+        0.009435887979910438,
+        0.019502838721692378
+      ],
+      "failure_rate_difference": -0.04933333333333333,
+      "healthy_achieved_rate_ratio": 0.9999983712945323,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    },
+    "lc": {
+      "per_seed_primary_p99_ratios": [
+        0.10648582829291349,
+        0.1669147155843376,
+        0.1976981493744114,
+        0.34554318399350387,
+        0.3216933040730966,
+        0.16668746503551196
+      ],
+      "primary_p99_ratio": 0.20057311668485273,
+      "simultaneous_ratio_interval": [
+        0.13328909092204597,
+        0.30017798407612567
+      ],
+      "failure_rate_difference": -0.049638888888888885,
+      "healthy_achieved_rate_ratio": 0.9999977917947467,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    },
+    "p2c": {
+      "per_seed_primary_p99_ratios": [
+        0.10276549940082447,
+        0.046470967459831515,
+        0.048323491328499134,
+        0.0990901637739611,
+        0.08420728808940083,
+        0.04422937309076632
+      ],
+      "primary_p99_ratio": 0.06633046792578139,
+      "simultaneous_ratio_interval": [
+        0.04601020506620037,
+        0.09558255893336154
+      ],
+      "failure_rate_difference": -0.04919444444444444,
+      "healthy_achieved_rate_ratio": 1.0000026548355374,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    },
+    "pewma": {
+      "per_seed_primary_p99_ratios": [
+        0.4646614417313276,
+        0.23953502984144934,
+        0.2117592495397536,
+        0.4779786648584139,
+        0.3971221097948483,
+        0.192486063347509
+      ],
+      "primary_p99_ratio": 0.30844660047156036,
+      "simultaneous_ratio_interval": [
+        0.21035994802309618,
+        0.44723424553703006
+      ],
+      "failure_rate_difference": -0.04655555555555555,
+      "healthy_achieved_rate_ratio": 0.9999940877159048,
+      "latency_gate": true,
+      "failure_gate": true,
+      "throughput_gate": true,
+      "passed": true
+    }
+  },
+  "measured_requests": 1044000,
+  "requests_including_warmup": 3204000
+}

@@ -1,0 +1,47 @@
+# Project Janus Helm values
+
+replicaCount: 2
+
+image:
+  repository: ghcr.io/giltas/projectjanus
+  tag: "" # defaults to .Chart.AppVersion
+  pullPolicy: IfNotPresent
+
+# Proxy command-line flags
+proxy:
+  # -listen: address to listen on
+  listen: ":8080"
+
+  # -alpha: LinUCB exploration weight (0 = pure exploitation, 1 = pure exploration)
+  alpha: 0.15
+
+  # -gamma: forgetting factor in (0,1]; 1.0=no forgetting, 0.999≈1000-obs window
+  gamma: 0.999
+
+  # Empty keeps response-derived latency/status learning enabled without resource scraping.
+  prometheusURL: ""
+  featureInterval: "5s"
+
+  # -service: Kubernetes Service name for EndpointSlice auto-discovery.
+  # When empty, the proxy falls back to in-memory mock discovery (local dev only).
+  # Example: "my-backend-service"
+  service: ""
+
+  # Port for the service (must match -listen port)
+  port: 8080
+
+service:
+  type: ClusterIP
+  port: 8080
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

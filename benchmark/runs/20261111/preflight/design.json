@@ -1,0 +1,9 @@
+[
+  {
+    "index": 0,
+    "seed": 0,
+    "policy": "janus",
+    "scenario": "cpu",
+    "fault_port": 19001
+  }
+]

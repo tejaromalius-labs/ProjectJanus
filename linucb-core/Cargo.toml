@@ -1,0 +1,23 @@
+[package]
+name = "linucb-core"
+version = "0.1.0"
+edition = "2021"
+description = "LinUCB contextual-bandit core engine for Project Janus"
+
+[lib]
+name = "linucb_core"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[dependencies]
+nalgebra = "0.32"
+crossbeam-epoch = "0.9"
+
+[build-dependencies]
+cbindgen = "0.27"
+
+[dev-dependencies]
+rand = "0.8"
+
+[profile.release]
+lto = true
+codegen-units = 1
