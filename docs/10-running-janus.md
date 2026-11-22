@@ -125,7 +125,7 @@ helm install janus ./helm-chart \
   --set proxy.service=my-backend \
   --set proxy.alpha=0.15 \
   --set proxy.gamma=0.999 \
-  --set image.repository=ghcr.io/giltas/projectjanus \
+  --set image.repository=ghcr.io/tejaromalius-labs/projectjanus \
   --set image.tag=latest
 ```
 
@@ -197,7 +197,7 @@ kubectl logs -l app.kubernetes.io/name=project-janus -n janus-system --tail=3
 
 ```yaml
 replicaCount: 2
-image: { repository: ghcr.io/giltas/projectjanus, tag: "", pullPolicy: IfNotPresent }  # tag defaults to appVersion
+image: { repository: ghcr.io/tejaromalius-labs/projectjanus, tag: "", pullPolicy: IfNotPresent }  # tag defaults to appVersion
 proxy:
   listen: ":8080"
   alpha: 0.15

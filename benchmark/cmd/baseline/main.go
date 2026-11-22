@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/giltas/projectjanus/benchmark/internal/policy"
+	"github.com/tejaromalius-labs/ProjectJanus/benchmark/internal/policy"
 )
 
 // observing measures time to response headers (as Janus does) and reports

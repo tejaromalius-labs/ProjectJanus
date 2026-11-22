@@ -7,8 +7,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/featurestore"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/proxy"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/featurestore"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/proxy"
 )
 
 // RequestOutcome is the observed HTTP result of one proxied request. TCP

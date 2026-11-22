@@ -14,7 +14,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/fake"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
 )
 
 func discard() *slog.Logger { return slog.New(slog.NewTextHandler(io.Discard, nil)) }

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
 )
 
 func testRegistry(t *testing.T, cfg Config) (*Registry, *linucb.Engine) {

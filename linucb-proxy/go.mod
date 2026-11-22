@@ -1,4 +1,4 @@
-module github.com/giltas/projectjanus/linucb-proxy
+module github.com/tejaromalius-labs/ProjectJanus/linucb-proxy
 
 go 1.24.0
 

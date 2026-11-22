@@ -17,12 +17,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/fallback"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/featurestore"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/proxy"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/registry"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/telemetry"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/fallback"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/featurestore"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/proxy"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/registry"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/telemetry"
 )
 
 func namespaceFromEnv() string {

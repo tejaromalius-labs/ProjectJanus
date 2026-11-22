@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/featurestore"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/proxy"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/registry"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/featurestore"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/proxy"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/registry"
 )
 
 func discard() *slog.Logger { return slog.New(slog.NewTextHandler(io.Discard, nil)) }

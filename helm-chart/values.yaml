@@ -3,7 +3,7 @@
 replicaCount: 2
 
 image:
-  repository: ghcr.io/giltas/projectjanus
+  repository: ghcr.io/tejaromalius-labs/projectjanus
   tag: "" # defaults to .Chart.AppVersion
   pullPolicy: IfNotPresent
 

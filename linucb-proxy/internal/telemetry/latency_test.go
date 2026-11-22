@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/featurestore"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/proxy"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/featurestore"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/proxy"
 )
 
 func TestRollingP99AndWindowRecovery(t *testing.T) {

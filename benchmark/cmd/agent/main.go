@@ -23,7 +23,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/giltas/projectjanus/benchmark/internal/cgroup"
+	"github.com/tejaromalius-labs/ProjectJanus/benchmark/internal/cgroup"
 )
 
 const unit = "janus-bench-proxy"

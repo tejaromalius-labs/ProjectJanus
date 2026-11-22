@@ -19,7 +19,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/giltas/projectjanus/benchmark/internal/cgroup"
+	"github.com/tejaromalius-labs/ProjectJanus/benchmark/internal/cgroup"
 	"golang.org/x/sys/unix"
 )
 

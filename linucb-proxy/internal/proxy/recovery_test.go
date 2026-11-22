@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/circuitbreaker"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/fallback"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/featurestore"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/registry"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/circuitbreaker"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/fallback"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/featurestore"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/registry"
 )
 
 func TestBreakerFilteringAcrossRoutingPaths(t *testing.T) {

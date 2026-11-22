@@ -1,4 +1,4 @@
-module github.com/giltas/projectjanus/benchmark
+module github.com/tejaromalius-labs/ProjectJanus/benchmark
 
 go 1.24.0
 

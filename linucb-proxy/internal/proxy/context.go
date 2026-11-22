@@ -4,8 +4,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/featurestore"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/featurestore"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
 )
 
 // RequestInfo carries the per-request characteristics that feed the context

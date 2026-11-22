@@ -2,7 +2,7 @@
 // LinUCB decision is too slow or no pod qualifies.
 package fallback
 
-import "github.com/giltas/projectjanus/linucb-proxy/internal/registry"
+import "github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/registry"
 
 // LeastConnections picks the active pod with the fewest in-flight requests.
 type LeastConnections struct{}

@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/giltas/projectjanus/linucb-proxy/internal/circuitbreaker"
-	"github.com/giltas/projectjanus/linucb-proxy/internal/linucb"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/circuitbreaker"
+	"github.com/tejaromalius-labs/ProjectJanus/linucb-proxy/internal/linucb"
 )
 
 // PodState is the lifecycle phase of a backend pod.
