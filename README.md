@@ -201,3 +201,11 @@ but each stands alone.
 
 **Short on time?** Read page 1, then page 4. **Deploying it?** Pages 10 and 11, then the
 known issues. **Judging the evidence?** Page 12, then the history.
+
+---
+
+## License and citation
+
+The code is licensed under [Apache 2.0](LICENSE). The benchmark data under `benchmark/runs/`
+and the documentation are licensed under [CC BY 4.0](LICENSE-DATA). To cite this work,
+see [`CITATION.cff`](CITATION.cff).
