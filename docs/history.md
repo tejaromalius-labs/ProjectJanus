@@ -64,4 +64,4 @@ quote a number:
    Post-hoc analysis is "directional only". The 2026-11-11 recovery study is
    "exploratory".
 3. **Say what would change our mind.** Each study lists its limits. The benchmark's
-   limits are summarised in the [README](../README.md#does-it-work).
+   limits are summarised in the [README](../README.md#how-trustworthy-is-this).

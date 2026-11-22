@@ -15,9 +15,18 @@ It is a *contextual bandit* (LinUCB) in Rust, wrapped by a Go reverse proxy, shi
 one binary for Kubernetes. This repository is both the system and the experiment that
 asks whether the idea beats the classics.
 
+> **Status: research prototype, not for production.** The results below come from one
+> benchmark campaign that has not been repeated. Kubernetes discovery has a known data
+> race in the Rust core when pods are added under load, and the admin endpoints are
+> unauthenticated. See [Known issues](docs/known-issues.md) before running it anywhere
+> that matters.
+
 ---
 
 ## The headline
+
+*Preliminary: one campaign on one VM, with a synthetic workload Janus was tuned on, not
+yet repeated. Read [the limits](#how-trustworthy-is-this) with these numbers.*
 
 On a controlled testbed, with one backend deliberately broken for 10 seconds at a time,
 Janus cut p99 latency by **4× to 90×** against four classic policies, and its failure
@@ -138,6 +147,7 @@ And the limits are real, so quote them with the result:
 - **RR's number is a ceiling, not a tail.** It is capped by 2-second client timeouts.
 - **The recovery result is exploratory.** The fixes were written after seeing the first results and tested once, with no repeat.
 - **It is a synthetic, friendly workload.** Evenly spaced requests at 600 RPS, one VM, short faults, identical requests, and Janus was tuned on this testbed. Nothing here covers bursty traffic, multi-node networks, Kubernetes discovery or production load.
+- **Provenance can't be shown from git.** The development history was squashed into the first public commits on 2026-11-11, so the git log can't prove the protocol was frozen before the 2026-11-10 campaign. The binary hashes in `benchmark/runs/*/binary-sha256.txt` don't map to a commit, and the recovery study used a binary built from the working tree.
 
 Details and the exact numbers are in [Testing and benchmarking](docs/12-testing-and-benchmarking.md);
 what is still open is in [Known issues](docs/known-issues.md).

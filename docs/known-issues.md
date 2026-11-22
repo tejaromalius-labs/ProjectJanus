@@ -2,7 +2,7 @@
 
 This page lists what is still wrong or unproven, in the order we would worry about
 it. Nothing here is hidden elsewhere: if you are deciding whether to rely on Janus,
-read this page next to the [benchmark results](../README.md#does-it-work).
+read this page next to the [benchmark results](../README.md#how-trustworthy-is-this).
 
 ## What to worry about first
 
@@ -10,7 +10,10 @@ read this page next to the [benchmark results](../README.md#does-it-work).
    the README), and the recovery fix has been tested once, after being written
    with knowledge of the first results.
 2. **Reproducibility.** The recovery study used a binary built from the working tree on
-   2026-11-11, and the benchmark runs themselves were not repeated.
+   2026-11-11, and the benchmark runs themselves were not repeated. The git
+   history was squashed into the first public commits, so it can't show that the
+   protocol was frozen before the campaign, and the recorded binary hashes don't
+   map to any commit.
 3. **Production hazards.** Unsynchronised arm growth, unauthenticated admin
    endpoints on the client port, no TLS and no retries. These are listed below
    and none of them is exercised by the benchmark.
