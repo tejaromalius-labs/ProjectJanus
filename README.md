@@ -216,6 +216,7 @@ known issues. **Judging the evidence?** Page 12, then the history.
 
 ## License and citation
 
-The code is licensed under [Apache 2.0](LICENSE). The benchmark data under `benchmark/runs/`
-and the documentation are licensed under [CC BY 4.0](LICENSE-DATA). To cite this work,
-see [`CITATION.cff`](CITATION.cff).
+The code is licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). The
+benchmark data under `benchmark/runs/` and the documentation are licensed under
+[CC BY-NC 4.0](LICENSE-DATA). Commercial use of either requires a separate written license
+from the author. To cite this work, see [`CITATION.cff`](CITATION.cff).

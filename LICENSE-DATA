@@ -2,13 +2,14 @@ Copyright 2026 tejaromalius
 
 The benchmark data and results under benchmark/runs/, and the documentation and
 figures under docs/ and in README.md, are licensed under the Creative Commons
-Attribution 4.0 International License (CC BY 4.0).
+Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
 
-You may share and adapt this material for any purpose, including commercially,
-provided you give appropriate credit, link to the license and indicate if changes
-were made. See CITATION.cff for how to cite it.
+You may share and adapt this material for noncommercial purposes only, provided you
+credit tejaromalius and https://github.com/tejaromalius-labs/ProjectJanus, link to the
+license and indicate if changes were made. See CITATION.cff for how to cite it.
+Commercial use requires a separate written license from the author.
 
-Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
 All source code, build scripts and configuration in this repository are licensed
-under the Apache License 2.0; see LICENSE.
+under the PolyForm Noncommercial License 1.0.0; see LICENSE.
