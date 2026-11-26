@@ -5,9 +5,7 @@ type: software
 authors:
   - alias: tejaromalius
 repository-code: "https://github.com/tejaromalius-labs/ProjectJanus"
-license:
-  - PolyForm-Noncommercial-1.0.0
-  - CC-BY-NC-4.0
+license: PolyForm-Noncommercial-1.0.0
 abstract: >-
   Janus is a LinUCB contextual-bandit load balancer: a Rust core wrapped by a Go
   reverse proxy. The repository includes a black-box benchmark harness and raw
